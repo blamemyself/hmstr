@@ -1,0 +1,15 @@
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\bin\Debug\hAMSTERcOMBA.exe.config
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\bin\Debug\hAMSTERcOMBA.exe
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\bin\Debug\hAMSTERcOMBA.pdb
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\hAMSTERcOMBA.csproj.AssemblyReference.cache
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\MainWindow.g.cs
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\App.g.cs
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\hAMSTERcOMBA_MarkupCompile.cache
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\hAMSTERcOMBA_MarkupCompile.lref
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\MainWindow.baml
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\hAMSTERcOMBA.g.resources
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\hAMSTERcOMBA.Properties.Resources.resources
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\hAMSTERcOMBA.csproj.GenerateResource.cache
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\hAMSTERcOMBA.csproj.CoreCompileInputs.cache
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\hAMSTERcOMBA.exe
+C:\Users\student-a502\Downloads\PR12\hAMSTERcOMBA\hAMSTERcOMBA\obj\Debug\hAMSTERcOMBA.pdb
