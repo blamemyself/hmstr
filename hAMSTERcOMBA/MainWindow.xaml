@@ -22,7 +22,7 @@
         <ComboBox  x:Name="hmstr_combobox" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" Width="246" Background="#FF1E1F23" SelectionChanged="ComboBox_SelectionChanged" Foreground="White">
             <ComboBoxItem Tag="hmstr_bibyt" Content="Bibyt" Background="#FF1E1F23" Foreground="White"/>
             <ComboBoxItem Tag="hmstr_binance" Content="Binance" Background="#FF1E1F23" Foreground="White"/>
-            <ComboBoxItem Tag="hmstr_AnimaSMP" Content="AnimaSMP" Background="#FF1E1F23" Foreground="White"/>
+            <ComboBoxItem Tag="hmstr_AnimaSMP" Content="Permaviat" Background="#FF1E1F23" Foreground="White"/>
         </ComboBox>
         <TextBlock x:Name="hmstr_birja" HorizontalAlignment="Left" Margin="294,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Height="22" Foreground="White"><Run Text="Биржа"/><Run Language="ru-ru" Text=":"/></TextBlock>
         <Label Content="Выберите биржу" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Foreground="White"/>

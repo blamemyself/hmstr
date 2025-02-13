@@ -21,7 +21,7 @@ namespace hAMSTERcOMBA
     public partial class MainWindow : Window
     {
         int tap_counter = 0;
-        int tap_mojitel = 1;
+        int tap_mojitel = 0;
         bool tap_mnojitel_active = false;
         bool strah_uzhas = false;
         double leftsave = 0;
