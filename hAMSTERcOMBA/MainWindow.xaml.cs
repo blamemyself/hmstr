@@ -23,6 +23,9 @@ namespace hAMSTERcOMBA
         int tap_counter = 0;
         int tap_mojitel = 1;
         bool tap_mnojitel_active = false;
+        bool strah_uzhas = false;
+        double leftsave = 0;
+        double topsave = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -38,18 +41,37 @@ namespace hAMSTERcOMBA
 
         private void Tap_hamster(object sender, MouseButtonEventArgs e)
         {
-            if (tap_mnojitel_active)
+            if (tap_counter >= 10000 && strah_uzhas == false)
             {
-                tap_counter += 1;
-                tap_counter += tap_mojitel;
-                
+                strah_uzhas = true;
+                this.Height = 1080;
+                this.Width = 1920;
+                this.WindowState = WindowState.Maximized;
+                this.WindowStyle = WindowStyle.None;
+                this.Topmost = true;
+                leftsave = this.Left;
+                topsave = this.Top;
+                this.Left = 0;
+                this.Top = 0;
+                pes_strashilka.Visibility = Visibility.Visible;
+
+
             }
             else
             {
-                tap_counter++;
+                if (tap_mnojitel_active)
+                {
+                    tap_counter += 1;
+                    tap_counter += tap_mojitel;
+
+                }
+                else
+                {
+                    tap_counter++;
+                }
+
+                Tap_counter.Content = "Тапов: " + tap_counter.ToString();
             }
-            
-            Tap_counter.Content = "Тапов: " + tap_counter.ToString();
         }
 
 
@@ -80,7 +102,7 @@ namespace hAMSTERcOMBA
                 tap_counter -= 250;
 
                 MessageBox.Show("Вы приобрели апгрейд для хомячка: +1 тап!!!");
-
+                tap_mnoj.Content = "Множитель тапов: " + tap_mojitel.ToString();
                 Tap_counter.Content = "Тапов: " + tap_counter.ToString();
             }
             else
@@ -97,8 +119,9 @@ namespace hAMSTERcOMBA
                 tap_mnojitel_active = true;
                 tap_mojitel += 3;
                 tap_counter -= 500;
-                MessageBox.Show("Вы приобрели апгрейд для хомячка: +1 тап!!!");
 
+                MessageBox.Show("Вы приобрели апгрейд для хомячка: +3 тапа!!!");
+                tap_mnoj.Content = "Множитель тапов: " + tap_mojitel.ToString();
                 Tap_counter.Content = "Тапов: " + tap_counter.ToString();
             }
             else
@@ -116,8 +139,8 @@ namespace hAMSTERcOMBA
                 tap_mojitel +=9;
                 tap_counter -= 1000;
                 
-                MessageBox.Show("Вы приобрели апгрейд для хомячка: +1 тап!!!");
-
+                MessageBox.Show("Вы приобрели апгрейд для хомячка: +9 тапов!!!");
+                tap_mnoj.Content = "Множитель тапов: " + tap_mojitel.ToString();
                 Tap_counter.Content = "Тапов: " + tap_counter.ToString();
             }
             else
@@ -125,6 +148,18 @@ namespace hAMSTERcOMBA
                 tap_mnojitel_active = false;
                 MessageBox.Show("У вас недостаточно тапов:" + tap_counter.ToString() + ". \nОсталось:" + (1000 - tap_counter));
             }
+        }
+
+        private void Pes_click(object sender, MouseButtonEventArgs e)
+        {
+            pes_strashilka.Visibility = Visibility.Hidden;
+            this.Height = 800;
+            this.Width = 450;
+            this.WindowState = WindowState.Normal;
+            this.WindowStyle = WindowStyle.SingleBorderWindow;
+            this.Topmost = false;
+            this.Left = leftsave;
+            this.Top = topsave;
         }
     }
 }

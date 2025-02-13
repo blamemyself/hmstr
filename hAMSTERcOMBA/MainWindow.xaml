@@ -11,6 +11,7 @@
             <RowDefinition Height="97*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+
         <Label x:Name="Tap_counter" Content="Тапов: 0" HorizontalAlignment="Center" Margin="0,610,0,0" VerticalAlignment="Top" Width="296" Height="51" FontSize="24" HorizontalContentAlignment="Center" FontWeight="Bold" Foreground="White"/>
         <Button x:Name="Tap_reset" Click="Tap_reset_button" Content="Сбросить тапы" HorizontalAlignment="Center" VerticalAlignment="Top" Height="41" Width="308" Background="White" Margin="0,666,0,0" FontSize="24" FontWeight="Bold" BorderBrush="White" Foreground="Black" >
             <Button.Effect>
@@ -25,7 +26,7 @@
         </ComboBox>
         <TextBlock x:Name="hmstr_birja" HorizontalAlignment="Left" Margin="294,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Height="22" Foreground="White"><Run Text="Биржа"/><Run Language="ru-ru" Text=":"/></TextBlock>
         <Label Content="Выберите биржу" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Button Content="+1 " Click="Tap_Mnojetel_1" HorizontalAlignment="Left" Margin="37,138,0,0" VerticalAlignment="Top" Width="104" Height="50" Background="#FF1E1F23" Foreground="White">
+        <Button Content="+1 "  Click="Tap_Mnojetel_1" HorizontalAlignment="Left" Margin="37,138,0,0" VerticalAlignment="Top" Width="104" Height="50" Background="#FF1E1F23" Foreground="White">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -52,6 +53,8 @@
         <Label HorizontalContentAlignment="Center" Content="250 Тапов" HorizontalAlignment="Left" Margin="24,193,0,0" VerticalAlignment="Top" Foreground="White" Width="130" FontWeight="Bold"/>
         <Label HorizontalContentAlignment="Center" Content="500 Тапов" HorizontalAlignment="Left" Margin="168,193,0,0" VerticalAlignment="Top" Foreground="White" Width="130" FontWeight="Bold"/>
         <Label HorizontalContentAlignment="Center" Content="1000 Тапов" HorizontalAlignment="Left" Margin="303,193,0,0" VerticalAlignment="Top" Foreground="White" Width="130" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Center" Visibility="Hidden" MouseDown="Pes_click" x:Name="pes_strashilka"  Height="1080" Margin="-741,-125,-741,-139" VerticalAlignment="Center" Width="1920" Source="Images/pes.png" Stretch="Fill" Grid.RowSpan="2" Panel.ZIndex="99"/>
+        <Label HorizontalContentAlignment="Center" x:Name="tap_mnoj" Content="Множитель тапов: 0" HorizontalAlignment="Center" Margin="82,224,60,0" VerticalAlignment="Top" Foreground="White" Width="302" FontWeight="Bold"/>
 
 
     </Grid>
