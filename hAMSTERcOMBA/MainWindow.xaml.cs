@@ -40,7 +40,9 @@ namespace hAMSTERcOMBA
         {
             if (tap_mnojitel_active)
             {
-                tap_counter += 1 + tap_mojitel;
+                tap_counter += 1;
+                tap_counter += tap_mojitel;
+                
             }
             else
             {
@@ -63,7 +65,7 @@ namespace hAMSTERcOMBA
                     hmstr_birja.Text = "Биржа: Binance";
                     break;
                 case 2:
-                    hmstr_birja.Text = "Биржа: Anima";
+                    hmstr_birja.Text = "Биржа: Permaviat";
                     break;
              
             }
@@ -75,6 +77,11 @@ namespace hAMSTERcOMBA
             {
                 tap_mnojitel_active = true;
                 tap_mojitel++;
+                tap_counter -= 250;
+
+                MessageBox.Show("Вы приобрели апгрейд для хомячка: +1 тап!!!");
+
+                Tap_counter.Content = "Тапов: " + tap_counter.ToString();
             }
             else
             {
@@ -89,6 +96,10 @@ namespace hAMSTERcOMBA
             {
                 tap_mnojitel_active = true;
                 tap_mojitel += 3;
+                tap_counter -= 500;
+                MessageBox.Show("Вы приобрели апгрейд для хомячка: +1 тап!!!");
+
+                Tap_counter.Content = "Тапов: " + tap_counter.ToString();
             }
             else
             {
@@ -103,6 +114,11 @@ namespace hAMSTERcOMBA
             {
                 tap_mnojitel_active = true;
                 tap_mojitel +=9;
+                tap_counter -= 1000;
+                
+                MessageBox.Show("Вы приобрели апгрейд для хомячка: +1 тап!!!");
+
+                Tap_counter.Content = "Тапов: " + tap_counter.ToString();
             }
             else
             {
